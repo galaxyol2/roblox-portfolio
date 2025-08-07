@@ -1,1 +1,68 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0b0c10, #0e0e13);
+  color: #ccc;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+}
+
+/* Sections */
+.section {
+  padding: 100px 40px;
+  min-height: 100vh;
+  padding-top: 160px; /* extra space for navbar */
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #61dafb, #d06dd3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.description {
+  max-width: 600px;
+  color: #999;
+}
